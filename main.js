@@ -18,9 +18,9 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  let iconPath =   __dirname + '/resources/app/favicon.ico'
+  let iconPath =   __dirname + '/resources/app/favicon.png'
   if (!fs.existsSync(iconPath)) {
-    iconPath = __dirname + '/favicon.ico'
+    iconPath = __dirname + '/favicon.png'
   }
   
   console.log(iconPath);

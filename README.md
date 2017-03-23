@@ -1,7 +1,12 @@
 # WhatsApp Web App using Electron
 
-# TL;DR: Download and use immediately (Windows only):
-   Download the folder ``WhatsAppWeb-win32-x64`` and run the ``WhatsAppWeb.exe``
+# TL;DR: Download and use immediately (Windows, Linux only):
+  - Download the appropriate archive:
+  
+    - Linux: https://github.com/dominikandreas/whatsapp_web_electron/blob/master/dist/WhatsAppWeb-linux-x64.tar.gz?raw=true
+    - Windows: https://github.com/dominikandreas/whatsapp_web_electron/blob/master/dist/WhatsAppWeb-win32-x64.zip?raw=true
+
+  - extract the archive and run the ``WhatsAppWeb`` executable
 
 # Introduction
 
@@ -29,6 +34,9 @@ If you want to create a standalone app for a different website, just edit the ma
 - install electron-packager: ``npm install -g electron-packager``
 - execute packager in the root folder of this repository:
   ``electron-packager .``
+
+## Why is the app so huge in size even though it just opens a link in a window?
+Good question. This app basically packages a whole browser engine (chrome) and javascript engine (node.js), so it's really overkill for just displaying a website in a window. But it's also the easiest solution I found for creating an app that works natively cross platform and has the support for minimizing to tray.
 
 
 ## License
